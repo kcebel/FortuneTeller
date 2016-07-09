@@ -22,6 +22,20 @@ namespace FortuneTeller
             string color = Console.ReadLine();
             Console.WriteLine("How many siblings do you have?");
             int siblings = int.Parse(Console.ReadLine());
+            Console.WriteLine(Retirement(age));
+        }
+        static int Retirement(int age)
+        {
+            int years;
+            if(age % 2 == 0)
+            {
+                years = 15;
+            }
+            else
+            {
+                years = 25;
+            }
+            return years;
         }
     }
 }
