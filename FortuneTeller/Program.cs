@@ -20,6 +20,8 @@ namespace FortuneTeller
             string birthMonth = Console.ReadLine();
             Console.WriteLine("What is your favorite color?");
             string color = Console.ReadLine();
+            Console.WriteLine("How many siblings do you have?");
+            int siblings = int.Parse(Console.ReadLine());
         }
     }
 }
