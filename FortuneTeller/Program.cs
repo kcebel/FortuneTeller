@@ -24,6 +24,8 @@ namespace FortuneTeller
             int siblings = int.Parse(Console.ReadLine());
             Console.WriteLine(Retirement(age));
         }
+
+        //Method to calculate the number of years until retirement
         static int Retirement(int age)
         {
             int years;
@@ -37,5 +39,31 @@ namespace FortuneTeller
             }
             return years;
         }
+        //TEST
+        //Method to figure out where the user will retire
+        static string Location(int sibs)
+        {
+            string location;
+            switch (sibs)
+            {
+                case 0:
+                    location = "Trash Can Heights, Oklahoma";
+                    break;
+                case 1:
+                    location = "Maui";
+                    break;
+                case 2:
+                    location = "c";
+                    break;
+                case 3:
+                    location = "d";
+                    break;
+                default:
+                    location = "e";
+                    break;
+            }
+            return location;
+        }
+
     }
 }
